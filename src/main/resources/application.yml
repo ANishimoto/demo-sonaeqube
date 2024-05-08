@@ -1,0 +1,23 @@
+spring:
+  application:
+    name: demo-sonarqube
+  mvc:
+    throw-exception-if-no-handler-found: true
+  web:
+    resource:
+      add-mappings: false
+    jpa:
+      hibernate:
+        naming:
+          physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+          implicit-strategy: org.hibernate.boot.model.naming.Implicit NamingStrategyStandardImpl
+springdoc:
+  swagger-ui:
+    path: /demo-sonarqube/doc
+    tagSorter: alpha
+  api-docs:
+    path: /demo-sonarqube/api-doc
+    enabled: true
+
+server:
+  port: 8080
